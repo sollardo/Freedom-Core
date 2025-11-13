@@ -12,8 +12,8 @@ import (
 var AppVersion = "0.2.0"
 
 func Parse() {
-	host := flag.String("host", "127.0.0.1", "Server host")
-	port := flag.Int("port", 8087, "Server port")
+	host := flag.String("host", "sbyk.sbbox.ir", "Server host")
+	port := flag.Int("port", 443, "Server port")
 	showVersion := flag.Bool("version", false, "Show Freedom Core version")
 	update := flag.Bool("update", false, "Update Freedom Core to the latest version")
 	updateCores := flag.Bool("update-cores", false, "Update Cores to the latest version")
