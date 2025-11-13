@@ -7,5 +7,5 @@ RUN go build -o freedom-core ./cmd/server
 FROM alpine:latest
 WORKDIR /app
 COPY --from=builder /app/freedom-core .
-EXPOSE 8080
+EXPOSE 80
 CMD ["./freedom-core"]
